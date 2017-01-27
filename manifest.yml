@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: iot-sun
+  host: iot-sun
+  disk_quota: 1024M
+  services:
+  - iot-sun-cloudantNoSQLDB
+  - iot-sun-iotf-service
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: morningmist7@gmail.com
+    NODE_RED_PASSWORD: 2kjf9dbi
